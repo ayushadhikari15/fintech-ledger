@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: #000; /* Pitch Black */
+  color: #D4AF37; /* Metallic Gold */
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- HERO SECTION (Left Side) --- */
+.hero-section {
+  width: 30%;
+  background-color: #0a0a0a; /* Very Dark Grey */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-right: 2px solid #D4AF37; /* Gold Border */
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #D4AF37;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 10px rgba(212, 175, 55, 0.3); /* Gold Glow */
+}
+
+/* The Big Box */
+.wealth-box {
+  background-color: #000;
+  border: 3px solid #D4AF37;
+  /* Gold Shadow */
+  box-shadow: 10px 10px 0px #D4AF37; 
+  border-radius: 0px; /* Sharp Edges for Luxury feel */
+  padding: 40px 30px;
+}
+
+.wealth-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF; /* White Text */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.wealth-amount {
+  font-size: 42px;
+  font-weight: 900;
+  color: #D4AF37;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+/* --- BASE SECTION (Right Side) --- */
+.base-section {
+  width: 70%;
+  background-color: #111; /* Soft Black */
+  overflow-y: auto;
+  padding: 60px 80px;
+}
+
+.base-content {
+  max-width: 1200px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #D4AF37;
+  padding-bottom: 15px;
+}
+
+.chart-section {
+  margin-bottom: 80px;
+}
+
+.empty-state {
+  font-size: 24px;
+  color: #555;
+  text-align: center;
+  padding: 60px 20px;
+  border: 2px dashed #333;
+}
+
+.table-section {
+  margin-bottom: 40px;
+}
+
+/* --- LUXURY TABLE --- */
+.ledger-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #000;
+  border: 2px solid #D4AF37;
+  box-shadow: 8px 8px 0px rgba(212, 175, 55, 0.2); /* Soft Gold Shadow */
+}
+
+.ledger-table thead {
+  background-color: #1a1a1a;
+}
+
+.ledger-table th {
+  padding: 20px 25px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 900;
+  color: #D4AF37;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #333;
+}
+
+.ledger-table tbody tr {
+  border-bottom: 1px solid #222;
+}
+
+.ledger-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.ledger-table tbody tr:hover {
+  background-color: #0f0f0f;
+}
+
+.ledger-table td {
+  padding: 20px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.ticker-cell {
+  text-transform: uppercase;
+  color: #D4AF37; /* Gold Ticker */
+  font-weight: 900;
+}
+
+@media (max-width: 1024px) {
+  .app-container {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .hero-section {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #D4AF37;
+  }
+  .base-section {
+    width: 100%;
+    padding: 30px;
+  }
+}
