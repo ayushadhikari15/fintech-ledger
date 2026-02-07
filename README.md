@@ -83,4 +83,4 @@ The UI follows a **"Luxury Neo-Brutalist"** approach:
 
 ### 👤 Author
 **Ayush Adhikari**
-*Full Stack Developer | Java & React Enthusiast*
+
